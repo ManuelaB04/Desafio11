@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/styles.css"/>
+    <title>CALCULADORA</title>
+  </head>
+  <body onload="init()">
+    <main class="main" id="main">
+      <section class="container" id="container">
+        <article class="calculator" id="calculator">
+            <div class="calculator_display" id="calculator_display" ></div>
+        </article>
+        <article class="calculator_operator" id="calculator_operator">
+            <div class="container_operator" id="container_operator">
+                <button class="num" id="siete" >7</button>
+                <button class="num" id="ocho"  >8</button>
+                <button class="num" id="nueve" >9</button>
+                <button class="operator" id="add" data-action="add">+</button>
+                <button class="num" id="cuatro">4</button>
+                <button class="num" id="cinco" >5</button>
+                <button class="num" id="seis"  >6</button>
+                <button class="operator" id="rest" data-action="rest">-</button>
+                <button class="num" id="uno"   >1</button>
+                <button class="num" id="dos"   >2</button>
+                <button class="num" id="tres"  >3</button>
+                <button class="operator" id="multiply" data-action="multiply">x</button>
+                <button class="num" id="cero"  >0</button>
+                <button class="decimal" id="decimal" data-action="decimal">.</button>
+                <button class="clear" id="clear" data-action="clear">C</button>
+                <button class="operator" id="split" data-action="split">/</button>
+               
+                
+                <button class="equal" id="equal" data-action="calculate">=</button>
+            </div>
+        </article>
+      </section>
+    </main>
+    <script src="/src/main.js"></script>
+  </body>
+</html>

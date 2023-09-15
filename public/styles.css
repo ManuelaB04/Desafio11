@@ -1,0 +1,70 @@
+html{
+    background-image: url(/public/img/fondo.webp);
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .container{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    background-color: #232323;
+    padding: 2rem;
+    border-radius: .5rem;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 1px 1px 4px #FAB836;
+    padding-bottom: 80px;
+}
+
+.main .container .calculator{
+    border: 2px solid #FAB836;
+    gap: 20px;
+    align-items: center;
+    border-radius: .5rem;
+    width: 280px;
+    background-color: white;
+}
+
+.main .container .calculator .calculator_display{
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: .5rem;
+    width: 250px;
+    text-align: left;
+    padding: 5px;
+    color: black;
+}
+
+button{
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 5px;
+    border: solid 2px;
+    border-color: #FAB836;
+    background-color:white;
+    gap: 10px;
+    border-radius: 20%;
+    align-items: center;
+
+}
+
+.main .container .calculator_operator .container_operator{
+    display: flex;
+    margin-bottom: 5px;
+    width: 250px;
+}
+
+.main .container .calculator_operator .container_operator{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr);    
+    height: 250px;
+    gap: 5px;
+}
